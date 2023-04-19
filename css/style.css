@@ -5,6 +5,7 @@ body {
     font-family: "Poppins";
     font-weight: 300;
     color: #9C9C9C;
+    background-color: #0D0D11;
 }
 
 .wrapper {
@@ -20,8 +21,105 @@ body {
     padding: 0px 15px;
 }
 
-/* ==== PAGE ==================================================================== */
+/* ==== BUTTON ==================================================================== */
+
+.button {
+    background-color: #3D96F4;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 16px 30px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.41;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #84b6eb;
+}
+
+/* ==== PAGE ====================================================================== */
 
 .page {
     flex: 1 1 auto;
 }
+
+/* ==== HEADER ==================================================================== */
+
+.header {}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 116px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    column-gap: 35px;
+}
+
+.header__logo {}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {}
+.menu__icon {}
+
+.icon__menu {
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 35px;
+}
+
+.menu__item {}
+
+.menu__link {
+    font-size: 16px;
+    line-height: 1.62;
+    color: #FFFFFF;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.header__cart {}
+
+.cart-header {
+    color: #FFFFFF;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cart-header:hover .cart-header__text {
+    text-decoration: underline;
+}
+
+.cart-header__text {
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.cart-header__quantity {
+    width: 30px;
+    height: 30px;
+    background: rgba(129, 129, 139, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header__button {}
+
